@@ -1,0 +1,207 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 LucidaGrande;\f2\froman\fcharset0 Times-BoldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red241\green242\blue245;\red255\green255\blue255;
+\red0\green0\blue0;\red30\green30\blue36;\red38\green38\blue38;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c95686\c96078\c96863;\cssrgb\c100000\c100000\c100000;
+\csgray\c0\c0;\cssrgb\c15686\c15686\c18824;\cssrgb\c20000\c20000\c20000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	1.	}Run ibank application. \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 mvn spring-boot:run\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}This application uses maven as build and h2 as database - hibernate for DB connectivity\
+{\listtext	3.	}Create an account\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request POST \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountName\expnd0\expndtw0\kerning0
+ ": " Mouniga ", "\kerning1\expnd0\expndtw0 phone\expnd0\expndtw0\kerning0
+ ": " 21234 ","\kerning1\expnd0\expndtw0 email\expnd0\expndtw0\kerning0
+ ": "xyz123 @gmail.com", "\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"\kerning1\expnd0\expndtw0 ACTIVE\expnd0\expndtw0\kerning0
+"\}'\\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 account\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	4.	}Update an account\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request PUT \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountName\expnd0\expndtw0\kerning0
+ ": " Mouniga ", "\kerning1\expnd0\expndtw0 phone\expnd0\expndtw0\kerning0
+ ": " 21234 ","\kerning1\expnd0\expndtw0 email\expnd0\expndtw0\kerning0
+ ": "xyz123 @gmail.com", "\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"\kerning1\expnd0\expndtw0 ACTIVE\expnd0\expndtw0\kerning0
+"\}'\\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 account\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	5.	}Delete an account -\cb4  \cb5 \expnd0\expndtw0\kerning0
+curl\'a0-X\'a0"DELETE"\cb6 \'a0\cb3 http://localhost:8080/\cb1 \kerning1\expnd0\expndtw0 account/1\
+{\listtext	6.	}Create a beneficiary- pre req - Account ids should be valid\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request POST \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountId\expnd0\expndtw0\kerning0
+": " 4 ", "\kerning1\expnd0\expndtw0 beneAccountId\expnd0\expndtw0\kerning0
+": " 5 ","\kerning1\expnd0\expndtw0 beneIfsccode\expnd0\expndtw0\kerning0
+": "xyz123 ", "\kerning1\expnd0\expndtw0 beneName\expnd0\expndtw0\kerning0
+":"Mm","\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"\kerning1\expnd0\expndtw0 ACTIVE\expnd0\expndtw0\kerning0
+"\}\} ' \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 beneficiary\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	7.	}Update a beneficiary\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request PUT \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountId\expnd0\expndtw0\kerning0
+": " 4 ", "\kerning1\expnd0\expndtw0 beneAccountId\expnd0\expndtw0\kerning0
+": " 5 ","\kerning1\expnd0\expndtw0 beneIfsccode\expnd0\expndtw0\kerning0
+": "xyz123 ", "\kerning1\expnd0\expndtw0 beneName\expnd0\expndtw0\kerning0
+":"Mm","\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"\kerning1\expnd0\expndtw0 ACTIVE\expnd0\expndtw0\kerning0
+"\}\} ' \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 beneficiary\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	8.	}View beneficiary list by account id - \cb3 \expnd0\expndtw0\kerning0
+curl http://localhost:8080/\cb1 \kerning1\expnd0\expndtw0 beneficiary/2\
+{\listtext	9.	}Delete a beneficiary by account id - \cb5 \expnd0\expndtw0\kerning0
+curl\'a0-X\'a0"DELETE"\'a0\cb3 http://localhost:8080/\cb1 \kerning1\expnd0\expndtw0 beneficiary/1\
+{\listtext	10.	}Deposit a transaction \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\kerning1\expnd0\expndtw0 \
+{\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request POST \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountId\expnd0\expndtw0\kerning0
+": " 2 ","\kerning1\expnd0\expndtw0 amount\expnd0\expndtw0\kerning0
+": "100 ", "\kerning1\expnd0\expndtw0 remarks\expnd0\expndtw0\kerning0
+":"Mm","\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"
+\f2\i\b \cf2 \kerning1\expnd0\expndtw0 SUCCESS
+\f0\i0\b0 \cf2 \expnd0\expndtw0\kerning0
+"\}\} ' \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 deposit_transaction\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	11.	}Withdraw a transaction - A valid account balance should be present\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\cf2 \expnd0\expndtw0\kerning0
+curl --header "Content-Type: application/json" \\\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --request POST \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+  --data  '\{ "\kerning1\expnd0\expndtw0 accountId\expnd0\expndtw0\kerning0
+": " 2 ","\kerning1\expnd0\expndtw0 amount\expnd0\expndtw0\kerning0
+": " 100 ", "\kerning1\expnd0\expndtw0 remarks\expnd0\expndtw0\kerning0
+":"Mm","\kerning1\expnd0\expndtw0 status\expnd0\expndtw0\kerning0
+":"
+\f2\i\b \cf2 \kerning1\expnd0\expndtw0 SUCCESS
+\f0\i0\b0 \cf2 \expnd0\expndtw0\kerning0
+"\}\} ' \\\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+ \cf2 \cb3 http://localhost:8080/\cf2 \cb1 \kerning1\expnd0\expndtw0 withdrawl_transaction\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	12.	}View transaction by account id\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\
+\pard\pardeftab720\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 {\listtext	
+\f1 \uc0\u8259 
+\f0 	}\expnd0\expndtw0\kerning0
+curl http://localhost:8080/\cb1 \kerning1\expnd0\expndtw0 transactions/2\
+\pard\tx566\pardeftab720\partightenfactor0
+\cf2 		\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+}
